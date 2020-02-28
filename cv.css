@@ -1,6 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     height: 100vh;
+    background-color: rgba(165, 42, 42, 0.205);
 }
   
 img {
@@ -13,9 +14,23 @@ img {
 div{
     padding: 10px;
     margin: 2px;
-    background-color: white;
+    background-color: inherit;
+    text-align: center;
 }
 
+.leftContainer:hover {
+    color: rgb(66, 61, 61);
+    background-color: rgba(187, 70, 105, 0.493);
+}
+
+.rightContainer:hover {
+    color: rgb(66, 61, 61);
+    background-color: rgba(156, 143, 18, 0.493);
+}
+
+h1{
+    text-align: center;
+}
 .row:before,
 .row:after {
     content:"";
