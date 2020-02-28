@@ -1,0 +1,82 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+  
+img {
+    height:200px;
+    width:200px;
+    display:block;
+    margin:auto;
+}
+
+div{
+    padding: 10px;
+    margin: 2px;
+    background-color: white;
+}
+
+.row:before,
+.row:after {
+    content:"";
+    display: table ;
+    clear:both;
+}
+
+.leftContainer{
+    border: 1px solid rgba(44, 9, 9, 0.521);
+    background-color: rgb(18, 104, 92);
+}
+
+.rightContainer{
+    border: 1px solid rgba(45, 177, 100, 0.849);
+}
+
+@media all and (min-width:420px) and (max-width: 720px){
+    .rightContainer, .leftContainer{
+        float: left;
+        width: 50%;
+        box-sizing: border-box;
+        margin: 0;
+    }
+}
+
+@media all and (min-width: 720px){
+    .rightContainer, .leftContainer{
+        float: left;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    .leftContainer{
+        width: 25%;
+    }
+
+    .rightContainer{
+        width: 75%;
+    }
+}
+
+.col-1 {
+    width: 24%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.col-2 {
+    width: 49%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.col-3 {
+    width: 75%;
+    box-sizing: border-box;
+    float: left;
+}
+
+.col-4 {
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+}
